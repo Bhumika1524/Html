@@ -1,0 +1,858 @@
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="Technical.css" />
+</link>
+</head>
+<body>
+<nav id="navbar">
+  <header>
+    HTML Tutorial
+  </header>
+  <ul>
+   <li><a class="nav-link" href="#introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#editors">HTML Editors</a></li>
+    <li><a class="nav-link" href="#tag">HTML Tags</a></li>
+    <li><a class="nav-link" href="#elements">HTML Elements</a></li>
+    <li><a class="nav-link" href="#attributes">HTML Attributes</a></li>
+    <li><a class="nav-link" href="#formatting">HTML Formatting</a></li>
+    <li><a class="nav-link" href="#comments">HTML Comments</a></li>
+    <li><a class="nav-link" href="#meta-tag">HTML Meta Tag</a></li>
+    <li><a class="nav-link" href="#anchor">HTML Anchor</a></li>
+    <li><a class="nav-link" href="#font">HTML Fonts</a></li>
+    <li><a class="nav-link" href="#images">HTML Images</a></li>
+    <li><a class="nav-link" href="#phase-tag">HTML Phases Tag</a></li>
+    <li><a class="nav-link" href="#table">HTML Tables</a></li>
+    <li><a class="nav-link" href="#reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+ <section class="main-section" id="introduction">
+   <header>Introduction</header>
+   <article>
+     <p>As you all are familiar with web pages and websites, do you know how these pages are created and displayed? Who started developing HTML language for sharing information on the World Wide Web (WWW)? In this chapter and further chapters, you will be learning about all these queries along with the skill of creating your webpage.</p>
+     <h1>What is HTML?</h1>
+     <p>HTML (Hypertext Markup Language) is the only markup language for creating web pages. It provides some titles, headings, paragraphs, lists, tables, embedded images, etc. to describe the structure of text-based information in HTML documents.</p>
+     <ul>
+       <li>HTML is a straightforward Computer Coding Language. It was developed in the 90s. HTML is the basis of a web page, and the web page is the basis of a website. HTML uses 'tags' to create web documents.</li>
+       <li>HTML is a Hypertext Markup Language; it's a Predominant set of Markup tags which used to create the design of web pages</li>
+       <li>HTML is the first language of web designing. CSS is also used along with HTML to improve the design of the web page further. JavaScript is used along with HTML to make web pages dynamic.</li>
+       <li>HTML is relatively easy to learn because every tag is predefined, so only we need to know the work of tags and its attributes.</li>
+       <li>Web browsers (Chrome, Internet Explorer, Firefox, Safari, and other web browsers) are software' to read HTML and to display webpage design as output.</li>
+       <li>You can write HTML in any simple editor like Notepad, Adobe Dreamweaver, Sublime, etc. are primarily used for writing and editing HTML.</li>
+       <li>.html or .htm are extensions is used for writing HTML file, so we can write HTML code in any editor, and can save as filename.html or filename.htm.</li>
+     </ul>
+   </article>
+  </section>
+  <section class="main-section" id="editors">
+   <header>HTML Editors</header>
+   <article>
+     <p>To write HTML code, we need an HTML editor, and we can do this with the help of a notepad on our computer. Some computers with different Operating-system have different text editors. But all text editors are used to write and save texts in various formats. In this lesson, you will learn how to write, save, and run HTML documents.</p>
+     <p>A web page is a text file, in which a hypertext language is written according to the grammar of HTML. This HTML code is displayed by the browser converting it to a web page. Programs in which HTML code is written or modified are called HTML editors.</p>
+     <p>Many specialized software applications are available online to edit HTML code and create web pages such as Adobe Dreamweaver, Bluefish, Google Web Designer, Sublime Text, and many others.</p>
+     <div id="page2">
+     <h3>Table of content</h3>
+     <ol>
+       <li><a href="#notepad">Writing HTML using Notepad</a></li>
+       <li><a href="#open">Step1: Open Notepad</a></li>
+       <li><a href="#code">Step2: Write HTML Code</a></li>
+       <li><a href="#save">Step3: Save the file as a HTML Document</a></li>
+       <li><a href="#run">Step4: Run the HTML Page in Your Browser </a></li>
+     </ol>
+     </div>
+     <h2 id="notepad">Writing HTML using Notepad</h2>
+     <p>Notepad is a basic application that comes with the Windows operating system; It is commonly used to write and save texts. Below are four steps to write, save, and run HTML using Windows Notepad:</p>
+     <h4 id="open">Step1: Open Notepad</h4>
+     <p>You can easily find Notepad in the list of programs.</p>
+     <h4 id="code">Step2: Write HTML Code</h4>
+     <p>After opening the Notepad, you can now write your HTML code on it. 
+     </p>
+     <h4 id="save">Save the file as HTML Document</h4>
+     <p>To save a file, go to the Notepad File menu and click the Save As option. After that, it will show you a popup window where you have to select the file path, file name, and file type to save this file. Here you have to type the file name with the .html extension to save the file as an HTML document.</p>
+     
+     <h4 id="run">Run the HTML Page in your browser</h4>
+     <p>To run a saved HTML file, you only have to open the file in any web browser.</p>
+    </article>
+  </section>
+  <section class="main-section" id="tag">
+   <header>HTML Tags</header>
+   <article>
+     <p>HTML tags can be considered as hidden keywords or commands incorporated in HTML, which holds the capability to define how your browser will display the content and format of the web page. Most tags of HTML have two sections: an opening and a closing portion, and any text is written within that has its effect based on the working of the tag. The most common example is the HTML tag, which has both a starting tag and ending tag.</p>
+     <div id="page3">  
+     <h3>Table of content</h3>
+     <ol>
+       <li><a href="#document"> HTML Document</a></li>
+       <li><a href="#html-tag">HTML Tag</a></li>
+       <li><a href="#head-tag">Head Tag</a></li>
+       <li><a href="#body-tag">Body Tag</a></li>
+     </ol>
+     </div>
+     <h3 id="document">HTML Document</h3>
+     <ul>
+       <li>All HTML documents begin with <! DOCTYPE html>.</li>
+       <li><xmp>The HTML document begin with <html> and ends with </html>.</xmp></li>
+       <li><xmp>The HTML code inside the <head> and </head> tags of the HTML document is invisible. It contains other information related to the webpage.</xmp></li>
+       <li><xmp>Only the content inside the <body> and </body> tags are displayed in the browser.</xmp></li>
+     </ul>
+     <h3 id="html-tag">HTML Tag</h3>
+     <p><xmp>HTML tag which is usually written as <html>…. </html> or is the only tag which is a must for writing HTML pages. HTML tag has both a opening <html> and a closing tag </html>. The closing of tags is done by a forward slash (/) at the very start of the tag name. These types of tags having both opening and closing tags are called container tags, and those who only have an opening tag and no closing tag are called empty tags.</xmp></p>
+     <h3 id="head-tag">Head Tag</h3>
+     <p>The HEAD tag is another important tag used to add the header in HTML. It is used to give various additional information about the page along with description and title to your page, which gets displayed in the title bar or acts as an indicator of what information to use or on which page you are currently in. The TITLE Tag is written within this HEAD tag.</p>
+     <h3 id="body-tag">Body Tag</h3>
+     <p>This tag is used to give the body, i.e., the visible section of the HTML document. All formatting and writing of content are done in this section within the opening<xmp> <body> and the closing </body></xmp> tag. If your HTML code does not have a body tag associated with it, the HTML code will still run as written in the above example (only show the title in the title bar). This tag contains the information and formatting that will be seen in the main web browser in the form of a web page.</p>
+     <p>It is to be noted that, together, these three necessary tags html, head, and body,make up the skeleton of an XHTML document, and these are the only foundation tags upon which all web pages are created or developed.</p>
+    </article>
+  </section>
+   <section class="main-section" id="elements">
+   <header>HTML Elements</header>
+   <article>
+     <p>HTML elements are the names of the starting tags of your HTML code. When you find an element containing additional content, you will see that it ends up using a closing tag has a forward slash with the name of the element.</p>
+     <p>HTML Elements is a combination of HTML tags and content. The HTML element is between the start tag and the end tag; This is called an HTML element; It is important to have your content in it; Otherwise, it will be called only a tag.</p>
+     <p>Here are some of the common examples of elements and how they are written:</p>
+     <table id="tag-exp">
+       <tr>
+         <th> tag</th>
+         <th> Examples</th>
+       </tr>
+       <tr>
+         <td><xmp><p></xmp></td>
+         <td><xmp><p>Paragraph elements are used for giving paragraph spacing to statements.</p></xmp></td>
+       </tr>
+       <tr>
+         <td><xmp><h1></xmp></td>
+         <td><xmp><h1>Heading elements are used to provide a heading to articles of your web page.</h1></xmp></td>
+       </tr>
+       <tr>
+         <td><xmp><br/></xmp></td>
+         <td><xmp><br/>Line break is used to provide carriage return or going to the next line.</xmp></td>
+       </tr>
+     </table>
+     </article>
+     </section>
+     <section class="main-section" id="attributes">
+   <header>HTML Attributes</header>
+   <article>
+     <p>You can define an attribute as the characteristics of any HTML tag that needs to be placed within the opening tag.</p>
+     <p>HTML attributes consist of two parts:</p>
+     <ul>
+       <li>a Name and</li>
+       <li>a value</li>
+     </ul>
+     <p>Names of attribute and its values are not case-sensitive. But according to the World Wide Web Consortium (W3C), it is recommended to use lowercase name and value. For an attribute, the name defines the property to be implemented. For example, BODY Tag, <body> carries many attributes such as bgcolor, background that you can implement for indicating the back color of your webpage, or give a specific image or background texture to your page respectively.</p>
+       <p>The value defines the value which you want to assign to the property and is set within quotations.</p>
+     <h4>Example:</h4>
+     <div id="exp">
+     <xmp>
+       <!DOCTYPE html>
+       <html>
+       <body bgcolor="#E6E6FA">
+
+       </body>
+       </html>
+     </xmp>
+     </div>
+     <br/>
+     <div id="page3">
+     <h3>Table of content</h3>
+     <ol>
+       <li><a href="#core">Core Attribute</a></li>
+       <li><a href="#id">Id Attribute</a></li>
+       <li><a href="#title">title Attribute</a></li>
+       <li><a href="#class">Class Attribute</a></li>
+       <li><a href="#style">Style Attribute</a></li>
+     </ol>
+     </div>
+     <h3 id="core">Core Attribute</h3>
+     <p>There are four essential attributes which you can implement on almost all HTML elements:</p>
+     <ol>
+       <li>id</li>
+       <li>title</li>
+       <li>class</li>
+       <li>style</li>
+     </ol>
+     <p>Let's discuss these special attributes:</p>
+     <h3 id="id">id Attribute</h3>
+     <p>This attribute can be implemented for providing unique identification to any element. There are two primary reasons that you might want to use an id attribute on an element. The id attribute provides a unique identifier, which eventually makes it possible to identify the HTML element. When you are containing two elements having the same name within the same script, id attribute helps to distinguish the two same elements via the unique ID.</p>
+     <h4><u>Example:</u></h4>
+      <div id="exp">
+     <xmp>
+       <p id = "para1"> Paragraph 1 in your HTML document.</p>
+
+       <p id = "para2"> Paragraph 2 in your HTML document.</p></xmp>
+     </div>
+     <h3 id="title">Title Attribute</h3>
+     <p>This attribute gives a recommended title for your element. Its behavior depends on the element upon which it's implemented, even though this is often implemented to display a tooltip if the cursor hovers (comes over) the element.</p>
+     <h4>Example:</h4>
+     <div id="exp">
+     <xmp>
+       <h3 title="Welcome to my Journal">Please visit</h3>
+     </xmp>
+     </div>
+     <h3 id="class">Class Attribute</h3>
+     <p>This attribute is implemented by combining an element through a stylesheet (CSS), and identify the element's class. For more about class attribute, you can follow the Cascading Style Sheet (CSS).</p>
+     <p>Here's an example of class attribute:</p>
+     <h4>Example:</h4>
+     <div id="exp">
+     <xmp><p class = "classname1 classname2">This is a sample paragraph text.</p></xmp>
+     </div>
+     <h3 id="style">Style Attribute</h3>
+     <p>This attribute gives you a chance for specifying the rules for Cascading Style Sheet (CSS) in your element.</p>
+     <h4>Example:</h4>
+     <div id="exp">
+     <xmp><p style = "font-family:arial;">An example of style attribute.</p></xmp>
+     </div>
+     </article>
+     </section>
+     <section class="main-section" id="formatting">
+   <header>HTML Formatting</header>
+   <article>
+     <p>Formatting is one of the crucial sections of every development. For making any project or article or content looks attractive, readable, and user-intractable, formatting plays a significant role. Formatting can be defined as the appearance of your documentation or presentation of your HTML code in a meaningful and more beautiful way. Formatting is mainly done to make the layout attractive.</p>
+     <p>HTML provides various formatting tags. They are collectively called as formatting tags because they are meant for the purpose mentioned above. So, in this chapter, you will learn about these formatting tags and how to use them.</p>
+     <p>Formatting elements in HTML were mainly created for displaying texts of a special type:</p>
+     <div id="page6">
+     <table>
+       <tr> 
+         <td>Tag </td>
+         <td>Meanings</td>
+       </tr>
+       <tr>
+         <td><xmp><u></xmp></td>
+         <td>For making text underlined.</td>
+       </tr>
+       <tr>
+         <td><xmp><b></xmp></td>
+         <td>For making text bold.</td>
+       </tr>
+       <tr>
+         <td><xmp><strong></xmp></td>
+         <td>Used in those texts, which are important and need to highlight.</td>
+       </tr>
+       <tr>
+         <td><xmp><i></xmp></td>
+         <td>For making text italic.</td>
+       </tr>
+       <tr>
+         <td><xmp><em></xmp></td>
+           <td>For emphasizing the texts.</td>
+       </tr>
+       <tr>
+         <td><xmp><mark></xmp></td>
+         <td>To make the texts marked or highlighted.</td>
+       </tr>
+       <tr>
+         <td><xmp><small></xmp></td>
+         <td>For making texts small in size, then the regular texts surrounded.</td>
+       </tr>
+       <tr>
+         <td><xmp><big></xmp></td>
+         <td>For making texts bigger or larger, then the rest of the texts surrounded.</td>
+       </tr>
+       <tr>
+         <td><xmp><del></xmp></td>
+         <td>To show texts that have been deleted or removed or replaced.</td>
+       </tr>
+       <tr>
+         <td><xmp><ins></xmp></td>
+         <td>To show texts that have been inserted or added.</td>
+       </tr>
+       <tr>
+         <td><xmp><sub></xmp></td>
+         <td>To show texts that have been inserted or added.</td>
+       </tr>
+       <tr>
+         <td><xmp><sup></xmp></td>
+         <td>To give a superscript effect to any text.</td>
+       </tr>
+       <tr>
+        <td><xmp><strike></xmp></td>
+       <td>For displaying any text as strikethrough.</td>
+       </tr>
+       <tr>
+        <td><xmp><tt></xmp></td>
+       <td>For displaying any font as a mono-spaced font. This tag is abbreviated as a typewriter type font tag.</td>
+       </tr>
+     </table>
+     </div>
+     <p>Let's check this out by using an example program:</p>
+     <h4><u>Example:</u></h4>
+     <div id="exp">
+     <xmp>
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <title>Formatting elements example</title>
+     </head>
+
+    <body>
+    This makes ur <u> text </u> underlined
+    <br/> This is a <b> bold </b> man
+    <br/> This is a <strong> Strong </strong> creature
+    <br/> I stands for <i> italics </i> 
+    <br/> This will <em> emphasize </em> your text
+    <br/> This will <mark> highlight </mark> your word
+    <br/> This is a <small> small </small> island
+    <br/> This is a <big> Big </big> river
+    <br/> I want red color, not <del> green </del>
+    <br/> Please insert <ins> THIS </ins> instead of THAT
+    <br/> H<sub> 2 </sub> O
+    <br/> x <sup> 3 </sup>
+    <br/> I want red color, not <strike> green </strike>
+    <br/> This is a <tt> different </tt> font
+    </body>
+    </html>
+     </xmp>
+     </div>
+     </article>
+     </section>
+     <section class="main-section" id="comments">
+   <header>HTML Comments</header>
+   <article>
+     <p>Comments are an essential part of HTML; it helps to provide the details of what is written in the HTML source code. HTML comment tags are completely ignored to display by the browsers. It's used to insert comments into the source code.</p>
+     <ul>
+       <li>When more than one developers work on the same application or web page, HTML comments can help to understand the source code.</li>
+       <li>Comment can be used anywhere to add information about HTML, which will be helpful for developers to understand the existing code in the future easily.
+       </li>
+     </ul>
+     <h3>Writing comments in HTML</h3>
+     <p>For writing comments in HTML, they begin with the <xmp><! -- (starting comment tag) and ends with the close comment tag, i.e. --></xmp>. Comments in HTML can be visible if and only if anyone tries to view the source code of the page, but anything is written within <xmp><!-- …. --></xmp> does not get rendered when you will render your HTML based web page through your browser.</p>
+     <h4><u>Syntax:</u></h4>
+     <xmp><!-- This is a commented code --></xmp>
+     <h4><u>Example:</u></h4>
+    <div id="exp">
+     <xmp>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Example for comment.</title>
+    </head>
+
+    <!-- Body of webpage starts from here -->
+    <body>
+    <h2>This is HTML comment example</h2>
+    <p>This is my first <strong>paragraph text</strong>.</p>
+    </body>
+    </html>
+       
+     </xmp>
+     </div>
+     </article>
+     </section>
+     <section class="main-section" id="meta-tag">
+   <header>HTML Meta Tag</header>
+   <article>
+     <p>Meta can be called as data about data. It means it holds information about other information, but the information is in the form of raw data. Meta Tags in HTML allows you to provide Metadata of your HTML page.</p>
+     <h3>What is HTML Meta Tag?</h3>
+     <p>Meta Tags are text snippets in the form of data that portrays your page's content. These meta tags and its' value do not emerge out on the web page you will create. However, it can be seen in the source code of your HTML page. It is to be noted that meta tags act as tiny content descriptors that allow you to convey to the search engines some information about what your web page is about and what keywords it has.</p>
+     <p><xmp>Other than that, metadata can be used by browsers, web services, and APIs to take data regarding a particular page. It is to be noted that the HTML <meta> tag comes within the <head> tag. Moreover, meta tags get passed in the form of a name-value pair.</xmp></p>
+     <h4>EXample:</h4>
+     <div id="exp">
+       <xmp>
+         <!DOCTYPE html>
+         <head>
+         <title> Example for Meta Tag </title>
+         <meta name = "keyword" content = "html, css, jQuery">
+         </head>
+
+         <body>
+         Welcome to w3schools.in<br>
+         You are learning about HTML Meta Tags
+         </body>
+         </html>
+       </xmp>
+     </div>
+       <p>Meta Tags are also used to provide a small description of your documents, which becomes a useful component for search engines. Something like this:</p>
+       <h4><u>Example:</u></h4>
+       <div id="exp">
+       <xmp><meta name = "description" content = "HTML Meta Tag - Meta can be called as data about data." ></xmp></div>
+       <p>Moreover, Meta tags are also used for redirecting pages as well. In this case, the duration can also be set to be redirected to a specific number of seconds.</p>
+       <h4><u>Example:</u></h4>
+       <div id="exp">
+       <xmp>
+         <meta http-equiv = "refresh" content="4; url = 'http://example.com' "></xmp></div>
+     </article>
+     </section>
+     <section class="main-section" id="anchor">
+   <header>HTML Anchor</header>
+   <article>
+     <p>You might know that hyperlink which is a powerful means of browsing from web pages and websites. It is developed for sending the readers or those who will perform surfing from one web page to another without opening a new tab or window. This is in general term said to as link and is given a reference to jump to another page, document, or from one part of the same page to another using a hypertext. So, now the question is, what hypertext is?</p>
+     <p><b>Hypertext</b> can be defined as a text shown on your PC screen, which holds the hyperlink data (here data means from which document to which document, it will move) and hence take the readers to different web pages by clicking it. In this chapter, you will be learning about how to create your very own hyperlink and use them in creating your website and web pages.</p>
+     <div id="page9">
+     <h4>Table of Content</h4>
+     <ol>
+       <li><a href="#a-tag">What is Anchor Tag?</a></li>
+       <li><a href="#href">HREF attribute</a></li>
+       <li><a href="#app">Appearance of HTML Anchor tag</a></li>
+       <li><a href="#p-tag">Program for Anchor Tag</a></li>
+       <li><a href="#a-image">Anchor in images</a></li>
+     </ol>
+     </div>
+     <h3 id="a-tag">What is Anchor Tag</h3>
+     <p>The Anchor tag in HTML can be defined as a means to create a hyperlink that can link your current page on which the text is being converted to hypertext via <a> (anchor tag) to another page. This anchoring from one page to another is made possible by the attribute "href", which can be abbreviated as (hypertext reference).</p>
+     <h3 id="href">HREF attribute</h3>
+     <p>The attribute 'HREF' of the Anchor tag is implemented for defining the address or path to which this hypertext will get linked. In other words, it can be said that it directs you out of your page to that destination page, whose link you have mentioned within the double quotes of the href attribute as value.</p>
+     <p>The syntax for an anchor tag with href attribute looks something like this:</p>
+     <xmp><a href = "URL">Text Here</a></xmp>
+     
+     <h3 id="app">Appearance of HTML Anchor tag</h3>
+     <p>Since Anchor tags are used for giving hyperlinks, you might have noticed that they change color based on certain situations, such as unvisited, clicked, visited, etc. Let's see their color code concerning their activity:</p>
+     <ul>
+       <li>An unvisited link gets displayed with properties like underlined and the color is blue</li>
+       <li>A link which is visited gets displayed as underlined with color as purple</li>
+       <li>A link which is active link gets displayed as underlined with red color</li>
+     </ul>
+     <p>Still, many web developers will deposit their link-colors in their web pages to match the color scheme of their site. Here's the format:</p>
+     <xmp><body bgcolor="red" text="yellow" link="blue" alink = "#FFFF00" vlink ="#FF00FF"></xmp>
+       <p>You can also provide hex code for colors as well (as you can see from the above example), or else you can use specific words for each color, which is acceptable by the browser.</p>
+     <h3 id="p-tag">Program for Anchor tag</h3>
+       <h4><u>Example:</u></h4>
+       <div id="exp">
+       <xmp>
+         <html>
+         <body>
+
+         <a href="/" >Welcome to w3schools</a>
+
+         </body>
+         </html>
+         
+       </xmp>
+       </div>
+     <h3 id="a-image">Anchor in images</h3>
+       <p>Anchor tags can also be used to create hyperlinks through images also. Here's a code snippet to show how to perform that.</p>
+       <h4><u>Example</u></h4>
+       <div id="exp">
+       <xmp>
+         <html>
+         <body>
+
+         <a href="https://www.example.com/"><img src ="logo.jpg"></a>
+
+         </body>
+         </html>
+       </xmp>
+       </div>
+     </article>
+     </section>
+     <section class="main-section" id="font">
+   <header>HTML Fonts</header>
+   <article>
+     <p>HTML has an amazing font tag that helps to customize the colors, shapes, and styles of web page fonts. In this chapter, you will learn about the primary <font> tag and its importance.</p>
+       <div id="page10">
+     <h4>Table of Contents</h4>
+     <ol>
+       <li><a href="#f-tag">HTML font Tag</a></li>
+       <li><a href="#size">Font size setup in HTML</a></li>
+       <li><a href="#style">Font style setup in HTML</a></li>
+       <li><a href="#color">Font color setup in HTML</a></li>
+     </ol>
+     </div>
+     <h3 id="f-tag">HTML font Tag</h3>
+     <p>Text having high readability and different style attracts the entire website and beautifies the content within. Proper use of style and color to the font can make your document more user-friendly and readable as well. The style of font, along with its color supportability, depends on the web browser, which the user will use for seeing the web pages. Form an HTML coder's point; it is done using the FONT tag which is written as:</p>
+     <h4><u>Syntax:</u></h4>
+     <xmp><font>This is an Sample text.</font></xmp>
+     <p>and includes its three attributes for adding different styles as well as increase or decrease size according to our choice and can play with text's color, which will get wrapped in your web page.</p>
+     <p>This customization of texts in web pages can be done at any moment of HTML coding. You have to use the <font> tag to perform that.</p>
+     <h3 id="size">Font size setup in HTML</h3>
+     <p>Texts in web development using HTML can be sized accordingly using the size attribute of the font tag. The size ranges from 1 up to 7 from lowest to highest.</p>
+     <h4><u>Example:</u></h4>
+     <div id="exp">
+     <xmp><html>
+<head>
+<title>Font size Example</title>
+</head>
+
+<body>
+
+<font size = "7">Here font size is 7 which is highest</font> <br/>
+
+<font size = "6">Here font size is 6</font> <br/>
+
+<font size = "5">Here font size is 5</font> <br/>
+
+<font size = "4">Here font size is 4</font> <br/>
+
+<font size = "3">Here font size is 3</font> <br/>
+
+<font size = "2">Here font size is 2</font> <br/>
+
+<font size = "1">Here font size is 1 which is lowest</font> <br/>
+
+</body>
+</html></xmp>
+     </div>
+     <p>Moreover, you can customize the font size relative to the original font size. It is termed as relative font sizing.</p>
+     <h4><u>Example:</u></h4>
+     <div id="exp">
+       <xmp><font size = "+2">The font size is set relatively<font></xmp>
+     </div>
+     <h3 id="style">Font style setup in HTML</h3>
+         <p>This is made possible using the face attribute of the font tag.</p>
+         <h4><u>Example:</u></h4>
+         <div id="exp">
+           <xmp>
+<html>
+<body>
+
+<font face = "WildWest" size = "4">Font style Example 1</font> <br/>
+<font face = "Monotype Corsiva" size = "6">Font style Example 2</font>
+
+</body>
+</html>
+           </xmp>
+         </div>
+     <h3 id="color">Font color setup in HTML</h3>
+         <p>This can be set using the color attribute of the font tag.</p>
+         <h4><u>Example:</u></h4>
+         <div id="exp">
+           <xmp><html>
+<body>
+
+<font color = "#0000FF"> Color change using Hex value </font><br/>
+<font color = "aqua"> Color change using color name </font>
+
+</body>
+</html>
+           </xmp>
+         </div>
+     </article>
+     </section>
+     <section class="main-section" id="images">
+   <header>HTML Images</header>
+   <article>
+     <p>A web page can appear better with images. So in this chapter, you will learn how to display images in HTML and about different attributes to customize it.</p>
+     <div id="page11">
+     <h4>Table of Contents</h4>
+     <ol>
+       <li><a href="#img-tag">HTML IMG Tag</a></li>
+       <li><a href="#src-att">The SRC Attribute of IMG tag </a></li>
+       <li><a href="#alt-att">The alt attribute</a></li>
+       <li><a href="#bor-att">The border attribute</a></li>
+       <li><a href="#hspace">The hspace attribute</a></li>
+       <li><a href="#vspace">The vspace attribute</a></li>
+       <li><a href="#h-w">Height and Width</a></li>
+     </ol>
+     </div>
+     <h3 id="img-tag">HTML IMG Tag</h3>
+     <p><xmp>For inserting pictures into our web page, we can use the <img> tag.  The <img> tag is an empty tag which mean it has no ending tag (i.e. no </img>) associated with it. The syntax of using <img> tag is:</xmp></p>
+     <xmp><img src = "path or URL" alt = "alternate_text or image replacement text">
+     </xmp>
+     <h3 id="src-att">The SRC Attribute of IMG Tag</h3>
+     <p>This attribute helps in specifying the image's source, which means this, instruct your web browser from which location it must fetch the particular picture (in other words, specify the path). SRC attribute takes path or URL as its value in quotes.</p>
+     <p>The source's image may exist locally on your computer (need a path to specify) or may reside somewhere in the webserver (need URL to specify). For images in your local PC, wither you have to set the entire path or bring that particular image's copy in a particular folder in which your .html file (in which you want to add image) is also residing.</p>
+
+      <p> For image path residing over the internet in some other webpage, you have to use URLs like this:</p>
+     <xmp><img src="https://tse3.mm.bing.net/th?id=OIP.8Vs8AWFqBM0KECMpTQBJNgHaFj&pid=Api&P=0&w=214&h=161" alt="Wallpaper"></xmp>
+     <h4><u>Output:</u></h4>
+     <div id="output">
+     <img src="https://tse3.mm.bing.net/th?id=OIP.8Vs8AWFqBM0KECMpTQBJNgHaFj&pid=Api&P=0&w=214&h=161" alt="Wallpaper">
+     </div>
+     <h3 id="alt-att">The alt attribute</h3>
+    <p> This attribute of Image Tag or <img> tag allows you to define an alternative text in case your browser becomes unsuccessful in loading the image. There may be situations when your browser might not be able to display that particular image either because of slow connection or server error or any other reason. Moreover, search engines take up those alternate texts given to images and help to find articles or content related to that text.</p>
+<xmp>
+  <img src= "ganesh.jpg" alt ="Lalbaugcha Raja"></xmp>
+     <h3 id="bor-att">The border attribute</h3>
+     <p>The default value of the border is assigned as "0px" to every image. For displaying the borders all around the image, you have to implement the border attribute of the IMG tag. Here's the example of how it needs to be applied:</p>
+
+     <xmp><img src="guitar.jpg" height="30px" width="30px" border="6"></xmp>
+     <h3 id="hspace">The hspace attribute</h3>
+     <p>Hspace attribute is used for providing horizontal spacing all-around your image. It takes value in the form: 20 or 20%.</p>
+     <h3 id="vspace">The vspace attribute</h3>
+     <p>Vspace attribute is used for providing vertical spacing all-around your image. It also takes value in the form: 20 or 20%. Both these attributes are used in situations where you want to maintain some gapping between your image and text.</p>
+     <h3 id="h-w">Height and Width</h3>
+     <p>In case you need a specific size of the image for fitting it into your web page, you can use the height and width attribute of the IMG tag. Here's an example:</p>
+     <xmp><img src="guitar.jpg" height="40px" width="80px">
+<br/>
+       <img src= "guitar.jpg" title= "Forest" height="25%" width="30%"></xmp>
+     <p>You can use both px (pixels) and % (percent) as a relative unit for specifying the size (here height and width) of the image.</p>
+     </article>
+     </section>
+     <section class="main-section" id="phase-tag">
+   <header>HTML Phase Tags</header>
+   <article>
+     <p>HTML phrase tags are unique purpose tags designed to use indefinite cases, even though they're implemented in the same manner as other tags are used, which you might have seen in previous chapters. So now, let's dig deep into each of its different types of phrase tags. You might have read about these in brief in the previous chapters, but not as a subcategory of phrase tags.</p>
+     <div id="page12">
+     <h4>Table of Content</h4>
+     <ol>
+       <li><a href="#e-tag">Emphasized Tag</a></li>
+       <li><a href="#m-tag">Marked Tag</a></li>
+       <li><a href="#s-tag">Strong Tag</a></li>
+       <li><a href="#ab-tag">Abbreviation Tag</a></li>
+       <li><a href="#ac-tag">Acronym Tag</a></li>
+       <li><a href="#d-tag">Special Terminology / Definition Tag</a></li>
+       <li><a href="#q-tag">Quoting Tag</a></li>
+       <li><a href="#sq-tag">Short Quote Tag</a></li>
+       <li><a href="#c-tag">Code Tag</a></li>
+       <li><a href="#k-tag">Keyboard Tag</a></li>
+       <li><a href="#ad-tag">Address Tag</a></li>
+       </ol>
+     </div>
+     <h3 id="e-tag">Emphasized Tag</h3>
+     <p>Emphasis Tag is used to emphasizing or stressing the word(s) within its opening and closing tags.</p>
+     <h4><u>Example:</u></h4>
+     <div id="exp">
+       <xmp>This is a <em>beautiful</em> mall</xmp>
+     </div>
+     <br/>
+     <h4><u>Output:</u></h4>
+     <div id="output">
+     This is a <em>beautiful</em> mall
+     </div><br/>
+     <h3 id="m-tag">Marked Tag</h3>
+     <p>Marked Tag is used for marking any word(s) in yellow as if it has been marked or read.
+     </p>
+     <h4><u>Example:</u></h4>
+     <div id="exp">
+      <xmp>Mark these <mark>words</mark></xmp>
+     </div><br/>
+       <h4><u>Output:</u></h4>
+       <div id="output">
+       Mark these <mark>words</mark>
+       </div>
+     <h3 id="s-tag">Strong Tag</h3>
+       <p>Strong Tag is used for making the appearance of a word strong or bolder for giving more importance.</p>
+       <h4><u>Example:</u></h4>
+     <div id="exp">
+      <xmp>These examples are <strong>very important</strong></xmp>
+     </div><br/>
+       <h4><u>Output:</u></h4>
+       <div id="output">
+ These examples are <strong>very important</strong>
+       </div>
+     <h3 id="ab-tag">Abbreviation Tag</h3>
+       <p>Abbreviation Tag is used to giving an abbreviation to any word written within the opening and closing tag.</p>
+       <h4><u>Example:</u></h4>
+     <div id="exp">
+      <xmp>Do you know the nickname of <abbr title = "Rowan Atkinson">Mr. Bean</abbr>?
+</xmp>
+     </div><br/>
+       <h4><u>Output:</u></h4>
+       <div id="output">
+       Do you know the nickname of <abbr title = "Rowan Atkinson">Mr. Bean</abbr>?
+       </div>
+     <h3 id="ac-tag">Acronym Tag</h3>
+       <p>Acronym Tag is used to showing that the text within the opening and closing tag is an acronym.</p>
+       <h4><u>Example:</u></h4>
+     <div id="exp">
+      <xmp>You are studying <acronym>HTML</acronym></xmp>
+     </div><br/>
+       <h4><u>Output:</u></h4>
+       <div id="output">
+       You are studying <acronym>HTML</acronym>
+       </div>
+     <h3 id="d-tag">Special Treminology / Definition Tag</h3>
+       <p>Special Terminology / Definition Tag is used when HTML developers introduce a special term and want to display it differently.</p>
+       <h4><u>Example:</u></h4>
+     <div id="exp">
+      <xmp>This can be defined as <dfn>scripting</dfn></xmp>
+     </div><br/>
+       <h4><u>Output:</u></h4>
+       <div id="output">
+       This can be defined as <dfn>scripting</dfn>
+
+       </div>
+     <h3 id="q-tag">Quoting Tag</h3>
+       <p>Quoting Tag is used in situations when HTML developers want to add a quote to a passage from a different source.</p>
+       <h4><u>Example:</u></h4>
+     <div id="exp">
+      <xmp><blockquote>This is all about India, which is a developing country having the second largest population.</blockquote>
+</xmp>
+     </div><br/>
+       <h4><u>Output:</u></h4>
+       <div id="output">
+       <blockquote>This is all about India, which is a developing country having the second largest population.</blockquote>
+
+       </div>
+     <h3 id="sq-tag">Short Quote Tag</h3>
+       <p>Short Quote Tag is used for adding a double quote to your statement on your web page.
+       </p>
+       <h4><u>Example:</u></h4>
+     <div id="exp">
+      <xmp>This can be defined as <q>scripting</q></xmp>
+     </div><br/>
+       <h4><u>Output:</u></h4>
+       <div id="output">
+       This can be defined as <q>scripting</q>
+       </div>
+     <h3 id="c-tag">Code Tag</h3>
+       <p>Code Tag is used for making text visualization as mono-spaced font, just like most of the programming books display code text.
+       </p>
+       <h4><u>Example:</u></h4>
+     <div id="exp">
+      <xmp>This is an example of code <code><?php echo "Hello World!" ?></code>
+       </xmp></div><br/>
+       <h4><u>Output:</u></h4>
+       <div id="output">
+      This is an example of code <code><?php echo "Hello World!" ?></code>
+       </div>
+     <h3 id="k-tag">Keyboard Tag</h3>
+       <p>Keyboard Tag is used to telling any reader for entering some text; that time, you can use this keyboard tag.</p>
+       <h4><u>Example:</u></h4>
+     <div id="exp">
+       <xmp>This is an example of <kbd>scripting</kbd></xmp></div><br/>
+       <h4><u>Output:</u></h4>
+       <div id="output">
+       This is an example of <kbd>scripting</kbd>
+       </div>
+     <h3 id="ad-tag">Address Tag</h3>
+       <p>Address Tag is used for specifying as well as emphasize that the set of text is an address.
+       </p>
+       <h4><u>Example:</u></h4>
+     <div id="exp">
+      <xmp>He is Mr. Bean <address>He lives in Boston.</address>
+       </xmp></div><br/>
+       <h4><u>Output:</u></h4>
+       <div id="output">
+      He is Mr. Bean <address>He lives in Boston.</address>
+       </div>
+     </article>
+     </section>
+     <section class="main-section" id="table">
+   <header>HTML Table</header>
+   <article>
+     <p>HTML tables can be beneficial in different cases, in which you can arrange data such as texts, lists, links, images, tables within a table, videos, etc. in the form of rows and columns where each intersection is called the cell.</p>
+     <div id="page13">
+     <h4>Table of content</h4>
+     <ol>
+       <li><a href="#t-tag">Table tag</a></li>
+       <li><a href="#b-t">Border attribute of Table Tag</a></li>
+       <li><a href="#h-t">Heading of Table tag</a></li>
+       <li><a href="#c-r">COLSPAN And ROWSPAN Attribute</a></li>
+       <li><a href="#p-s">Cell-Padding and Cell-Spacing Attribute</a></li>
+       <li><a href="#b-b">Table Background And Border Color</a></li>
+       <li><a href="#n-t">Nesting of Table</a></li>
+     </ol>
+     </div>
+     <h3 id="t-tag">Table tag</h3>
+     <p><xmp>Tables can be created within a web page using the<table> tag. Within it, the <tr>, which is table-row, is used for creating rows of the table. Again the <td> tag, which is table-data, is used for adding data to cells.</xmp></p>
+     <h4><u>Example:</u></h4>
+     <div id="exp">
+     <xmp><table border = "1">
+<tr>
+    <td>Column1 in Row1</td>
+    <td>Column2 in Row1</td>
+</tr>
+<tr>
+    <td>Column1 in Row2</td>
+    <td>Column2 in Row2</td>
+</tr>
+       </table></xmp>
+     </div>
+     <h3 id="b-t">Border attribute of Table Tag</h3>
+     <p>But this does not look good, and hence you can add a border to your table. This is done using the border attributes like this:</p>
+     <xmp><table border = "2"></xmp>
+     <h3 id="h-t">Heading of Table tag</h3>
+       <p><xmp>The <th> tag is used within the <table> tag for defining the heading for your table data. It is used as a replacement of <td> tag where the data for the table needs to be inserted in the form of heading.</xmp></p>
+         <h4><u>Example:</u></h4>
+         <div id="exp">
+           <xmp>
+<table border = "1">
+<tr>
+    <th>Column1 Heading</th>
+    <th>Column2 Heading</th>
+</tr>
+<tr>
+    <td>Column1 in Row1</td>
+    <td>Column2 in Row1</td>
+</tr>
+<tr>
+    <td>Column1 in Row2</td>
+    <td>Column2 in Row2</td>
+</tr>
+</table></xmp>
+         </div>
+     <h3 id="c-r">COLSPAN And ROWSPAN Attribute</h3>
+       <p><xmp>These two attributes of the <td> tag are used for merging two or more columns into a single column. It is useful in cases where you want to show mixed data universal for all the heading.</xmp></p>
+
+         <h4><u>Example:</u></h4>
+         <div id="exp">
+           <xmp><table border = "1">
+<tr>
+    <th>Column1 Heading</th>
+    <th>Column2 Heading</th>
+</tr>
+<tr>
+    <td>Column1 in Row1</td>
+    <td>Column2 in Row1</td>
+</tr>
+<tr>
+    <td colspan = "2">Column1 in Row2</td>
+</tr>
+</table></xmp></div>
+           <h4><u>Example:</u></h4>
+         <div id="exp">
+           <xmp><table border = "1">
+<tr>
+    <th>Column1 Heading</th>
+    <th>Column2 Heading</th>
+</tr>
+<tr>
+    <td rowspan = "2" >Column1 in Row1</td>
+    <td>Column2 in Row1</td>
+</tr>
+<tr>
+    <td>Column2 in Row2</td>
+</tr>
+</table></xmp>
+           </div>
+     <h3 id="p-s">Cell-Padding and Cell-Spacing Attribute</h3>
+           <p><xmp>These two attributes of the <table> tag are used for providing white spaces to your table cells from both sides. This is mainly done for beautification and to make data within your cells readable.</xmp></p>
+
+           <p>This is how you have to provide value to these attributes:</p>
+           <xmp><table border = "2" cellpadding = "6" cellspacing = "6"></xmp>
+     <h3 id="b-b">Table Background And Border Color</h3>
+             <p><xmp>HTML also allows you to provide background color or image to your table. These are done by the bgcolor and background attributes of the <table> tag. Moreover, you can set the color to borders as well. This is done by the bordercolor attribute of the <table> tag.</xmp></p>
+             <p>Here's how it is done:</p>
+
+             <xmp><table border = "1" bordercolor = "aqua" bgcolor = "red"></xmp>
+               
+     <h3 id="n-t">Nesting of Table</h3>
+               <p>You can add tables within another table, i.e., cell.  Code snippet for nesting HTML:</p>
+               <h4><u>Example:</u></h4>
+               <div id="exp">
+                 <xmp>
+    <table border = "2" cellpadding = "2" cellspacing = "2">
+    <tr>
+        <td>A</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td>C</td>
+    </tr>
+    <table border = "2" cellpadding = "2" cellspacing = "2">
+                <tr>
+                    <td>
+                        <table border = "2" cellpadding = "2" cellspacing = "2">
+                            <tr>
+                                <td>D</td>
+                                <td>E</td>
+                            </tr>
+                            <tr>
+                                <td>F</td>
+                                <td>G</td>
+                            </tr>
+                        </table>
+                    </td>
+                <td>H</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>J</td>
+                </tr>
+            </table>
+ </table></xmp>
+               </div>
+               </article>
+     </section>
+     <section class="main-section" id="reference">
+       <header>References</header>
+       <article>
+         <ul>
+           <li>All the documentation in this page is taken from 
+             <a href="https://www.w3schools.in/html-tutorial"
+                target="_blank">W3 School</a>
+           </li>
+         </ul>
+       </article>
+     </section>
+  </main>
+  </body>
+  </html>
