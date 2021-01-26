@@ -1,0 +1,144 @@
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="Survey.css">
+</link>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Cororna Virus Survey Form</h1>
+  <p id="description" class="description text-center">Thanks for taking this survey about corona virus and this will help us to know about your point of views of our country members.</p>
+  </header>
+  <form id="survey-form">
+     <div class="group">
+       <label id="name-label" for="name">Name</label>
+       <input
+            id="name"
+            type="text"
+            class="control"
+            name="name"                               
+            placeholder="Enter your name"
+            required />
+    </div>
+    <div class="group">
+       <label id="email-label" for="email">E-Mail</label>
+       <input
+          id="email"
+          type="text"
+          class="control"
+          name="email" 
+          placeholder="Enter your Email"
+          required />
+    </div>
+    <div class="group">
+      <label id="number-label" for="number"
+             >Age<span id="clue">(Optional)</span></label>
+       <input
+             id="number"
+             type="number"
+             class="control"
+             name="age"
+             min="10"
+             max="65"
+             placeholder="Age" />
+    </div>
+    <div class="group">
+      <p>Are you infected by Cororna Virus?</p>
+      <select id="dropdown" name="role" class="control" required >
+        <option disabled selected value>Select an Option</option>
+        <option value="infected">Infected</option>
+        <option value="not-infected">Not-Infected</option>
+        <option value="maybe">Maybe</option>
+      </select>
+    </div>
+     <div class="group">
+       <p> Would you recommend Social Distancing?</p>
+      <label>
+        <input
+         name="user-recommend"
+         value="defintely"
+         type="radio"
+         class="input-radio"
+         checked 
+        />Definitely</label>
+      <label>
+        <input
+        name="user-recommend"
+        value="maybe"
+        type="radio"
+        class="input-radio"
+        >Maybe</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+          />Not Sure</label>
+    </div>
+    <div class="group">
+      <p> What's your favourite thing about Quarantine?
+      <span class="clue">(Check all those apply)</span>
+      </p>
+      <label>
+        <input
+          name="prefer"
+          class="checkbox"
+          type="checkbox"
+          value="time-spending"
+          />Spending time with your family
+      </label> 
+      <label>
+        <input
+           name="prefer"
+           class="checkbox"
+           type="checkbox"
+           value="rest"
+           /> Resting at your home
+      </label> 
+      <label>
+        <input
+            name="prefer"
+            class="checkbox"
+            type="checkbox"
+            value="trying-things"
+            />Trying new recipies at your home
+      </label>
+      <label>
+        <input
+           name="prefer"
+           class="checkbox"
+           type="checkbox"
+           value="workout"
+           />Doing workout at your home
+      </label> 
+      <label>
+        <input
+             name="prefer"
+             class="checkbox"
+             type="checkbox"
+             value="playing"
+             />playing with your family
+      </label> 
+    </div>
+    <div class="group">
+      <p> Any Other Suggestions or Comments</p>
+      <textarea
+             id="comment"
+             class="input-textarea"
+             name="comment"
+             placeholder="Enter the comment here....."
+    ></textarea>
+    </div>
+    <div class="group">
+      <button
+           id="submit"
+           type="submit"
+           class="submit-button">
+          Submit
+      </button>
+    </div>
+   </form>
+</div>
+</body>
+</htmml>
