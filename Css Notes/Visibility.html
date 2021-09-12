@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+</head>
+<style>
+    .box{
+        width: 170px;
+        height: 170px;
+        border: 2px solid black;
+    }
+    #box1{
+        background-color: red;
+        position: relative;
+        top: 49px;
+        /* z-index: -35; */
+    }
+    #box2{
+        /* Visibility hidden is the property used to make element invisible in the output but the space is reserved for the element */
+        /* visibility: hidden; */
+        /* Display none is same as visibility hidden but the space of the element is not reserved */
+        /* display: none; */
+        background-color: blue;
+        position: relative;
+        top: 14px;
+        /* z-index will work only for position: relative , absolute, fixed or sticky; */
+        /* higher the z-index that element will come on the top of other element (with less z-index value) */
+        /* z-index: -116; */
+    }
+    #box3{
+        background-color: blueviolet;
+    }
+    #box4{
+        background-color: brown;
+    }
+</style>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid </title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+        .item{
+            background-color: darkseagreen;
+            border: 2px solid black;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="navbar">
+            Home   About   Contact Us   Services
+        </div>
+        <div class="item" id="section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatibus nobis quae ut tempore, quidem porro earum exercitationem provident corrupti omnis harum a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor esse consectetur nam voluptas, molestiae quia, reprehenderit quasi repellat dicta aliquid quibusdam quos eum dolorum hic magni, vel recusandae asperiores dolore?
+        </div>
+        <div class="item" id="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nobis vitae at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, temporibus consequatur? Consequuntur, atque. Tempore debitis laudantium eos similique accusantium. Sapiente corrupti ad excepturi, est molestiae iusto officia sequi facere nobis.
+        </div>
+        <div class="item" id="footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illum?
+        </div>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+</body>
+</html>

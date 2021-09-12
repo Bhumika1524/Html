@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow And Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: burlywood;
+            /* box-shadow: offset-x offset-y blur-radius spread-radius; */
+            /* blur-radius is the radius upto which you want to blur the shadow */
+            /* Spread-radius is the radius upto which you want to spread the shadow */
+            /* In box-shadow if we use negative value then it's shadow will be on top and if used positive number then it's shadow will be on bottom side */
+            box-shadow: 10px 13px green ;
+        }
+
+        .card h2{
+            text-shadow: 3px 4px 2px rgb(252, 56, 56);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, repudiandae delectus velit aliquid natus, ad sequi ratione nisi optio quos a maiores nihil ducimus quia nostrum reiciendis expedita vel voluptatem.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem odio fugit quae amet nobis, mollitia numquam blanditiis, soluta maxime reiciendis esse aspernatur, expedita labore voluptatibus modi doloremque qui at atque?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit obcaecati officiis temporibus neque consequuntur, aperiam similique tempore quia repudiandae facilis est saepe voluptates ad. Molestiae magni suscipit voluptas fugiat repudiandae!</p>
+        </div>
+    </div>
+</body>
+</html>

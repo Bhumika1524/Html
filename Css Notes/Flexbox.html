@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox </title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initialize the container as a flex box */
+            display: flex;
+            /* Flex Properties for flex container:  */
+            /* default value is row */
+            /* flex-direction: row; */
+            /* This will fall all the boxes in horizontal direction */
+            /* flex-direction: column;  */
+            /* Reverses the order of the boxes in the row direction */
+            /* flex-direction: row-reverse ; */
+            /* Reverses th eorder of the boxes in the column direction  */
+            /* flex-direction: column-reverse; */
+            /* Flex-wrap is used when you want to wrap the boxes when device width is small( in responsive web ) */
+            /* flex-wrap: wrap; */
+            /* in flex-wrap: wrap-reverse is used when oyu want to reverse the boxes in the reverse direction(which means wrap will start from last box till end) */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: flex-direction flex-wrap; */
+            /* to set both the flex-direction and flex wrap use flex-flow */
+            /* flex-flow: row-reverse wrap; */
+            /* justify-content: center; */
+             /* To align content in center  */
+            /* justify-content: space-between; */
+            /* It is used to give equal spaces between two boxes not from the corners but in between them  */
+            /* justify-content: space-evenly; */
+            /* It is used to give equal spaces between two boxes and also from the corners  */
+            /* justify-content: space-around; */
+            /* It is used to give equal spaces from both sides of the boxes (left and right both) */
+            /* align-items: center; */
+            /* Align-items: center is used when you want to align items vertically center  */
+            /* align-items: flex-end; To align items at the end of the flex-box */
+            /* align-items: stretch; */
+            /* Stretch is used to stretch the spaces between all the boxes equally */
+            
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /* Flex properties for flex items */
+            /* higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            flex-grow: 2; 
+            /* flex-shrink: 2; */
+            
+        }
+        #item-2{
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+            flex-basis: 160px;
+            /* When flex-direction: is set to row flex-basis: will control width */
+             /* When flex-direction: is set to column flex-basis: will control height */
+        }
+        #item-3{
+            /* order: 40; */
+            /* flex: flex-grow flex-shrink flex-basis; */
+            /* flex: 2 2 230px; */
+            /* to align box on the starting of the flex box */
+            align-self: flex-start;
+            /* to align the box at the end of the flex box */
+            align-self: flex-end;
+            /* to align the item at the center */
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox Notes</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifith Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+        <div class="item" id="item1">Seventh Box</div>
+        <div class="item" id="item2">Eightth Box</div>
+        <div class="item" id="item3">NinethvBox</div>
+        <div class="item" id="item4">Tenth Box</div>
+        <div class="item" id="item5">Eleventh Box</div>
+        <div class="item" id="item6">Tweleveth Box</div> -->
+    </div>
+    
+</body>
+</html>

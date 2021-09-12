@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* If yoou want to target the direct child only in any selector then you should use > (greater than symbol) for targetting any member for example if we want to target only those p which are directly present inside the div only not futher */
+        /* div > p{
+            color: yellow;
+            font-weight: bold;
+            background-color: yellowgreen;
+        } */
+
+        /* If you want to target only those paragraph whose parent / after is div then use + symbol */
+        div + p{
+            color: white;
+            background-color: rgb(228, 129, 129);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is a paragraph</p></li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Fonts</title>
+    <style>
+        /* For Float and Alignment */
+        body{
+            font-family: cursive;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin:39px auto;
+            background-color: wheat;
+
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(248, 205, 205);
+        }
+
+        #fruits{
+            float: left;
+            width:48%;
+
+
+        }
+        #computer{
+            float: left;
+            width:48%;
+        }
+        #stationary{
+            /* float: left; */
+            /* Clear is used when you don't want any disturbance in the position of that element  */
+            /* We can use clear: left/right/both depending on the the position you want that element on. */
+            clear: both;
+            width: 100%;
+        }
+        p, h3{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 455px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Alignment</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur similique voluptates quibusdam laboriosam error odio dicta neque vero. Reprehenderit, aut. Sunt at corporis doloremque porro officia velit debitis enim laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat error laborum consectetur? Nulla omnis vero, nesciunt, in aspernatur non odit sed qui esse ut commodi adipisci itaque expedita minus sequi! Ipsam eos pariatur dolor!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computers</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptate ducimus blanditiis doloremque, amet aliquam quisquam quaerat natus consequuntur voluptates praesentium ipsum architecto quod, accusantium ipsa cupiditate quos error repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident numquam tempore dolorem corrupti ipsa? Atque, quis. Numquam, reiciendis odit sint saepe iste officia explicabo itaque in, sequi tenetur natus, iure possimus eveniet quaerat impedit.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet rem sapiente in dolores quae, alias accusamus fuga odit, provident cumque minima corporis, quasi explicabo ea maxime fugiat. Blanditiis, illum tempora!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet rem sapiente in dolores quae, alias accusamus fuga odit, provident cumque minima corporis, quasi explicabo ea maxime fugiat. Blanditiis, illum tempora!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid with Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(autofit, minmax(400px, 1fr));
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .bdr {
+            border: 2px solid black;
+            background-color: wheat;
+            padding: 23px;
+        }
+
+        @media (min-width: 500px) and (max-width: 800px) {
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 500px) {
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container bdr">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span> 
+            <span>services</span> 
+        </nav>
+        <section class="bdr">
+            <h2>Learn css in hindi</h2>
+        </section>
+        <aside class="bdr">
+            <h1> More About Us</h1>
+        </aside>
+        <footer class="bdr">Copyright code with happiness</footer>
+    </div>
+</body>
+
+</html>
